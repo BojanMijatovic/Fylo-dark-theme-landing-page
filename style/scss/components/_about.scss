@@ -1,0 +1,23 @@
+.about {
+  &__list {
+    list-style: none;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+
+    &-img {
+      margin-bottom: 2rem;
+    }
+    &-title {
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+    }
+    &-info {
+      margin-bottom: 7rem;
+      font-size: 1.3rem;
+    }
+  }
+}

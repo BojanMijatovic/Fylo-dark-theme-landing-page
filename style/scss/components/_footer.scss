@@ -1,0 +1,61 @@
+.footer {
+  &__logo {
+    padding: 3rem 0;
+  }
+  &-list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+
+    &__lorem {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 2rem;
+      img {
+        width: 2rem;
+        height: 2rem;
+        margin-right: 1rem;
+      }
+      p {
+        font-size: 1.3rem;
+      }
+    }
+
+    &__contact {
+      li {
+        display: flex;
+        margin-bottom: 2rem;
+        img {
+          margin-right: 1rem;
+        }
+        p {
+          font-size: 1.3rem;
+        }
+      }
+    }
+
+    &__links {
+      list-style: none;
+      li {
+        margin: 1rem 0;
+        a {
+          text-decoration: none;
+          color: #fff;
+          font-size: 1.3rem;
+        }
+      }
+      margin-bottom: 2rem;
+    }
+
+    &__icons {
+      display: flex;
+      margin: 0 auto;
+      justify-content: center;
+      list-style: none;
+      width: 50%;
+      text-align: center;
+      li {
+        margin: 1rem 0.5rem 2rem 0;
+      }
+    }
+  }
+}
