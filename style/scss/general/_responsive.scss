@@ -1,0 +1,105 @@
+@include media-lg {
+  .hero {
+    justify-content: center;
+    align-items: center;
+    &__img {
+      width: 50%;
+    }
+    &__text {
+      padding: 0 28rem;
+    }
+    &__btn {
+      width: 15%;
+    }
+  }
+
+  .about__list {
+    grid-template-columns: repeat(2, 1fr);
+    &-item {
+      padding: 7rem;
+    }
+  }
+
+  .productive {
+    grid-template-columns: repeat(2, 1fr);
+
+    &__img {
+      width: 50rem;
+      height: 35rem;
+    }
+    &__text {
+      padding: 4rem;
+      &-btn {
+        width: 13.5rem;
+      }
+    }
+  }
+
+  .testimonial__list {
+    display: flex;
+    justify-content: space-around;
+
+    &::before {
+      position: relative;
+      top: -3rem;
+      left: 6rem;
+    }
+    &-item {
+      margin: 1.5rem;
+      z-index: 1;
+    }
+  }
+
+  .subscribe {
+    margin: 8rem auto;
+    padding: 4rem;
+    width: 70rem;
+    height: 32rem;
+    &__form {
+      grid-template-columns: repeat(2, 1fr);
+      margin-top: 3rem;
+      &-input {
+        width: 38rem;
+        height: 4rem;
+      }
+      &-btn {
+        margin: 0;
+        width: 20rem;
+        height: 4rem;
+      }
+    }
+  }
+
+  .footer-list {
+    grid-template-columns: repeat(5, 1fr);
+
+    &__lorem {
+      margin: 2rem 0rem 2rem 0;
+    }
+
+    &__contact {
+      margin: 2rem 0rem 2rem 8rem;
+    }
+    &__links {
+      margin: 2rem 0 2rem 10rem;
+      li {
+        margin-top: 0;
+      }
+    }
+
+    &__icons {
+      li {
+        margin: 1rem 0;
+        border: none;
+      }
+    }
+  }
+
+  .attribution {
+    text-align: center;
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+}

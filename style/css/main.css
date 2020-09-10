@@ -13,6 +13,12 @@ body {
   color: #fff;
   margin: 0 5%; }
 
+.attribution {
+  text-align: center; }
+  .attribution a {
+    color: #fff;
+    text-decoration: none; }
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -207,6 +213,87 @@ body {
     width: 50%;
     text-align: center; }
     .footer-list__icons li {
-      margin: 1rem 0.5rem 2rem 0; }
+      margin: 1rem auto;
+      border: 1px solid #fff;
+      border-radius: 50%; }
+      .footer-list__icons li ion-icon {
+        padding: 0.8rem;
+        align-items: center;
+        display: grid; }
+      .footer-list__icons li:active, .footer-list__icons li:hover {
+        cursor: pointer; }
+
+@media screen and (min-width: 1044px) {
+  .hero {
+    justify-content: center;
+    align-items: center; }
+    .hero__img {
+      width: 50%; }
+    .hero__text {
+      padding: 0 28rem; }
+    .hero__btn {
+      width: 15%; }
+
+  .about__list {
+    grid-template-columns: repeat(2, 1fr); }
+    .about__list-item {
+      padding: 7rem; }
+
+  .productive {
+    grid-template-columns: repeat(2, 1fr); }
+    .productive__img {
+      width: 50rem;
+      height: 35rem; }
+    .productive__text {
+      padding: 4rem; }
+      .productive__text-btn {
+        width: 13.5rem; }
+
+  .testimonial__list {
+    display: flex;
+    justify-content: space-around; }
+    .testimonial__list::before {
+      position: relative;
+      top: -3rem;
+      left: 6rem; }
+    .testimonial__list-item {
+      margin: 1.5rem;
+      z-index: 1; }
+
+  .subscribe {
+    margin: 8rem auto;
+    padding: 4rem;
+    width: 70rem;
+    height: 32rem; }
+    .subscribe__form {
+      grid-template-columns: repeat(2, 1fr);
+      margin-top: 3rem; }
+      .subscribe__form-input {
+        width: 38rem;
+        height: 4rem; }
+      .subscribe__form-btn {
+        margin: 0;
+        width: 20rem;
+        height: 4rem; }
+
+  .footer-list {
+    grid-template-columns: repeat(5, 1fr); }
+    .footer-list__lorem {
+      margin: 2rem 0rem 2rem 0; }
+    .footer-list__contact {
+      margin: 2rem 0rem 2rem 8rem; }
+    .footer-list__links {
+      margin: 2rem 0 2rem 10rem; }
+      .footer-list__links li {
+        margin-top: 0; }
+    .footer-list__icons li {
+      margin: 1rem 0;
+      border: none; }
+
+  .attribution {
+    text-align: center; }
+    .attribution a {
+      color: #fff;
+      text-decoration: none; } }
 
 /*# sourceMappingURL=main.css.map */
